@@ -11,7 +11,7 @@ export function Hero() {
   const heading = t(translations.hero.heading, lang).split("\n");
 
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-16 bg-[#080E1A]">
+    <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-16 bg-white">
       {/* Gradient orbs — subtle, CSS only */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute -top-32 left-1/2 -translate-x-1/2 h-[600px] w-[900px] rounded-full bg-[#E8220A]/[0.04] blur-[120px]" />
@@ -21,7 +21,7 @@ export function Hero() {
           className="absolute inset-0 opacity-[0.03]"
           style={{
             backgroundImage:
-              "linear-gradient(rgba(201,162,39,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(201,162,39,0.5) 1px, transparent 1px)",
+              "linear-gradient(rgba(232,34,10,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(232,34,10,0.5) 1px, transparent 1px)",
             backgroundSize: "80px 80px",
           }}
         />
@@ -38,15 +38,15 @@ export function Hero() {
         </FadeInUp>
 
         <FadeInUp delay={0.1}>
-          <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-[64px]">
+          <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-[#0A1628] sm:text-5xl lg:text-[64px]">
             {heading[0]}
             <br />
-            <span className="text-white/70">{heading[1]}</span>
+            <span className="text-[#0A1628]/70">{heading[1]}</span>
           </h1>
         </FadeInUp>
 
         <FadeInUp delay={0.2}>
-          <p className="mx-auto mt-8 max-w-xl text-base leading-relaxed text-white/40 sm:text-lg">
+          <p className="mx-auto mt-8 max-w-xl text-base leading-relaxed text-[#0A1628]/50 sm:text-lg">
             {t(translations.hero.subheading, lang)}
           </p>
         </FadeInUp>
@@ -64,7 +64,7 @@ export function Hero() {
               asChild
               variant="outline"
               size="lg"
-              className="border-white/10 text-white/60 hover:border-white/20 hover:text-white bg-transparent text-sm tracking-wide"
+              className="border-[rgba(10,22,40,0.08)] text-[#0A1628]/60 hover:border-[rgba(10,22,40,0.12)] hover:text-[#0A1628] bg-transparent text-sm tracking-wide"
             >
               <a href="#contact">{t(translations.hero.contactUs, lang)}</a>
             </Button>
@@ -75,7 +75,7 @@ export function Hero() {
       {/* Scroll indicator */}
       <a
         href="#about"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/20 transition-colors hover:text-[#E8220A] animate-bounce"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-[#0A1628]/30 transition-colors hover:text-[#E8220A] animate-bounce"
         aria-label="Scroll down"
       >
         <ArrowDown className="size-4" />

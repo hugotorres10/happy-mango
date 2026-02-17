@@ -14,7 +14,7 @@ export function Footer() {
   const { lang } = useLang();
 
   return (
-    <footer className="bg-[#080E1A] border-t border-[rgba(201,162,39,0.08)] px-6 py-10">
+    <footer className="bg-white border-t border-[rgba(232,34,10,0.08)] px-6 py-10">
       <div className="mx-auto max-w-7xl flex flex-col items-center gap-6 sm:flex-row sm:justify-between">
         {/* Logo */}
         <a href="#">
@@ -30,14 +30,14 @@ export function Footer() {
             <a
               key={link.href}
               href={link.href}
-              className="text-xs font-medium tracking-wider uppercase text-white/30 transition-colors hover:text-white/70"
+              className="text-xs font-medium tracking-wider uppercase text-[#0A1628]/40 transition-colors hover:text-[#0A1628]/70"
             >
               {t(translations.nav[link.key], lang)}
             </a>
           ))}
         </nav>
 
-        <p className="text-xs text-white/20">
+        <p className="text-xs text-[#0A1628]/30">
           &copy; {new Date().getFullYear()} H Mango Lda
         </p>
       </div>

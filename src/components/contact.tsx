@@ -13,7 +13,7 @@ export function Contact() {
   const { lang } = useLang();
 
   return (
-    <section id="contact" className="bg-[#080E1A] py-24 px-6 lg:py-32">
+    <section id="contact" className="bg-white py-24 px-6 lg:py-32">
       {/* Top divider */}
       <div className="mx-auto max-w-7xl">
         <FadeInUp>
@@ -21,10 +21,10 @@ export function Contact() {
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#E8220A]">
               {t(translations.contact.label, lang)}
             </p>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            <h2 className="mt-4 text-3xl font-bold tracking-tight text-[#0A1628] sm:text-4xl">
               {t(translations.contact.heading, lang)}
             </h2>
-            <p className="mt-4 text-base text-white/40">
+            <p className="mt-4 text-base text-[#0A1628]/50">
               {t(translations.contact.subheading, lang)}
             </p>
           </div>
@@ -35,40 +35,40 @@ export function Contact() {
           <FadeInUp delay={0.1} className="lg:col-span-3">
             <form
               onSubmit={(e) => e.preventDefault()}
-              className="space-y-5 rounded-xl border border-[rgba(201,162,39,0.1)] bg-[#111C2E] p-8"
+              className="space-y-5 rounded-xl border border-[rgba(232,34,10,0.1)] bg-white p-8"
             >
               <div className="grid gap-5 sm:grid-cols-2">
                 <div className="space-y-2">
-                  <Label htmlFor="name" className="text-xs font-medium tracking-wider uppercase text-white/40">
+                  <Label htmlFor="name" className="text-xs font-medium tracking-wider uppercase text-[#0A1628]/50">
                     {t(translations.contact.fullName, lang)}
                   </Label>
                   <Input
                     id="name"
                     placeholder={t(translations.contact.namePlaceholder, lang)}
-                    className="border-white/10 bg-[#0D1525] text-white placeholder:text-white/20 focus:border-[rgba(201,162,39,0.5)] focus:ring-0"
+                    className="border-[rgba(10,22,40,0.08)] bg-[#F4F5F7] text-[#0A1628] placeholder:text-[#0A1628]/30 focus:border-[rgba(232,34,10,0.5)] focus:ring-0"
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="email" className="text-xs font-medium tracking-wider uppercase text-white/40">
+                  <Label htmlFor="email" className="text-xs font-medium tracking-wider uppercase text-[#0A1628]/50">
                     {t(translations.contact.emailAddress, lang)}
                   </Label>
                   <Input
                     id="email"
                     type="email"
                     placeholder="name@company.com"
-                    className="border-white/10 bg-[#0D1525] text-white placeholder:text-white/20 focus:border-[rgba(201,162,39,0.5)] focus:ring-0"
+                    className="border-[rgba(10,22,40,0.08)] bg-[#F4F5F7] text-[#0A1628] placeholder:text-[#0A1628]/30 focus:border-[rgba(232,34,10,0.5)] focus:ring-0"
                   />
                 </div>
               </div>
               <div className="space-y-2">
-                <Label htmlFor="message" className="text-xs font-medium tracking-wider uppercase text-white/40">
+                <Label htmlFor="message" className="text-xs font-medium tracking-wider uppercase text-[#0A1628]/50">
                   {t(translations.contact.message, lang)}
                 </Label>
                 <Textarea
                   id="message"
                   rows={5}
                   placeholder={t(translations.contact.messagePlaceholder, lang)}
-                  className="border-white/10 bg-[#0D1525] text-white placeholder:text-white/20 focus:border-[rgba(201,162,39,0.5)] focus:ring-0 resize-none"
+                  className="border-[rgba(10,22,40,0.08)] bg-[#F4F5F7] text-[#0A1628] placeholder:text-[#0A1628]/30 focus:border-[rgba(232,34,10,0.5)] focus:ring-0 resize-none"
                 />
               </div>
               <Button
@@ -107,14 +107,14 @@ export function Contact() {
               ].map((item) => (
                 <div
                   key={item.label}
-                  className="flex items-start gap-4 rounded-xl border border-[rgba(201,162,39,0.08)] bg-[#111C2E] px-6 py-5"
+                  className="flex items-start gap-4 rounded-xl border border-[rgba(232,34,10,0.08)] bg-white px-6 py-5"
                 >
-                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[rgba(201,162,39,0.1)]">
+                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[rgba(232,34,10,0.1)]">
                     <item.icon className="size-4 text-[#E8220A]" />
                   </div>
                   <div>
-                    <p className="text-xs font-medium tracking-wider uppercase text-white/30">{item.label}</p>
-                    <p className="mt-1 text-sm text-white/70 whitespace-pre-line">{item.value}</p>
+                    <p className="text-xs font-medium tracking-wider uppercase text-[#0A1628]/40">{item.label}</p>
+                    <p className="mt-1 text-sm text-[#0A1628]/70 whitespace-pre-line">{item.value}</p>
                   </div>
                 </div>
               ))}
