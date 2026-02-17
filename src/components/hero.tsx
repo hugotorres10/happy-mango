@@ -12,33 +12,18 @@ export function Hero() {
   const heading = t(translations.hero.heading, lang).split("\n");
 
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-16">
-      {/* Background images — split: port left, airport right */}
+    <section className="relative flex min-h-screen items-start justify-center overflow-hidden px-6 pt-28 pb-16">
+      {/* Background image — luxury fashion/textile */}
       <div className="absolute inset-0">
-        {/* Left half — maritime port */}
-        <div className="absolute inset-y-0 left-0 w-1/2 overflow-hidden">
-          <Image
-            src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80"
-            alt="Maritime cargo port"
-            fill
-            priority
-            className="object-cover object-center scale-105"
-          />
-        </div>
-        {/* Right half — cargo airport */}
-        <div className="absolute inset-y-0 right-0 w-1/2 overflow-hidden">
-          <Image
-            src="https://images.unsplash.com/photo-1436262513933-a0b06755c784?w=1200&q=80"
-            alt="Cargo airport"
-            fill
-            priority
-            className="object-cover object-center scale-105"
-          />
-        </div>
-        {/* Soft white overlay — keeps images subtle */}
-        <div className="absolute inset-0 bg-white/88" />
-        {/* Center gradient to blend the split */}
-        <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-white/10 to-white/20" />
+        <Image
+          src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1920&q=85"
+          alt="Luxury fashion and textiles"
+          fill
+          priority
+          className="object-cover object-center"
+        />
+        {/* Soft white overlay */}
+        <div className="absolute inset-0 bg-white/82" />
       </div>
 
       {/* Top border accent */}
