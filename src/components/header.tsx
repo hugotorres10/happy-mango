@@ -34,6 +34,8 @@ export function Header() {
           : "bg-transparent"
       )}
     >
+      {/* White accent bar at very top */}
+      <div className="h-1 w-full bg-white" />
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:px-8">
         {/* Logo — no white box */}
         <a href="#" className="flex items-center">
