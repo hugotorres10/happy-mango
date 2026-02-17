@@ -39,7 +39,7 @@ export function Header() {
         <a href="#" className="flex items-center">
           <div className="bg-white rounded-md px-3 py-1.5">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo.jpg" alt="H Mango" className="h-10 w-auto" />
+            <img src="/logo.jpg" alt="H Mango" className="h-14 w-auto" />
           </div>
         </a>
 

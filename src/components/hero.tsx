@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 import { FadeInUp } from "@/components/motion-wrapper";
@@ -11,20 +12,33 @@ export function Hero() {
   const heading = t(translations.hero.heading, lang).split("\n");
 
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-16 bg-white">
-      {/* Gradient orbs — subtle, CSS only */}
-      <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute -top-32 left-1/2 -translate-x-1/2 h-[600px] w-[900px] rounded-full bg-[#E8220A]/[0.04] blur-[120px]" />
-        <div className="absolute bottom-0 right-0 h-[400px] w-[600px] rounded-full bg-[#E8220A]/[0.03] blur-[100px]" />
-        {/* Subtle grid pattern */}
-        <div
-          className="absolute inset-0 opacity-[0.03]"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(232,34,10,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(232,34,10,0.5) 1px, transparent 1px)",
-            backgroundSize: "80px 80px",
-          }}
-        />
+    <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-16">
+      {/* Background images — split: port left, airport right */}
+      <div className="absolute inset-0">
+        {/* Left half — maritime port */}
+        <div className="absolute inset-y-0 left-0 w-1/2 overflow-hidden">
+          <Image
+            src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80"
+            alt="Maritime cargo port"
+            fill
+            priority
+            className="object-cover object-center scale-105"
+          />
+        </div>
+        {/* Right half — cargo airport */}
+        <div className="absolute inset-y-0 right-0 w-1/2 overflow-hidden">
+          <Image
+            src="https://images.unsplash.com/photo-1436262513933-a0b06755c784?w=1200&q=80"
+            alt="Cargo airport"
+            fill
+            priority
+            className="object-cover object-center scale-105"
+          />
+        </div>
+        {/* Soft white overlay — keeps images subtle */}
+        <div className="absolute inset-0 bg-white/88" />
+        {/* Center gradient to blend the split */}
+        <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-white/10 to-white/20" />
       </div>
 
       {/* Top border accent */}
@@ -64,7 +78,7 @@ export function Hero() {
               asChild
               variant="outline"
               size="lg"
-              className="border-[rgba(10,22,40,0.08)] text-[#0A1628]/60 hover:border-[rgba(10,22,40,0.12)] hover:text-[#0A1628] bg-transparent text-sm tracking-wide"
+              className="border-[#0A1628]/20 text-[#0A1628]/70 hover:border-[#0A1628]/40 hover:text-[#0A1628] bg-transparent text-sm tracking-wide"
             >
               <a href="#contact">{t(translations.hero.contactUs, lang)}</a>
             </Button>
