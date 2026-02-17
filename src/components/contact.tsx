@@ -18,7 +18,7 @@ export function Contact() {
       <div className="mx-auto max-w-7xl">
         <FadeInUp>
           <div className="max-w-xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#C9A227]">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#E8220A]">
               {t(translations.contact.label, lang)}
             </p>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl">
@@ -73,7 +73,7 @@ export function Contact() {
               </div>
               <Button
                 type="submit"
-                className="bg-[#C9A227] text-[#080E1A] font-semibold hover:bg-[#D4B44A] text-xs tracking-wider uppercase px-8"
+                className="bg-[#E8220A] text-[#080E1A] font-semibold hover:bg-[#F03A1A] text-xs tracking-wider uppercase px-8"
               >
                 {t(translations.contact.sendMessage, lang)}
               </Button>
@@ -110,7 +110,7 @@ export function Contact() {
                   className="flex items-start gap-4 rounded-xl border border-[rgba(201,162,39,0.08)] bg-[#111C2E] px-6 py-5"
                 >
                   <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[rgba(201,162,39,0.1)]">
-                    <item.icon className="size-4 text-[#C9A227]" />
+                    <item.icon className="size-4 text-[#E8220A]" />
                   </div>
                   <div>
                     <p className="text-xs font-medium tracking-wider uppercase text-white/30">{item.label}</p>

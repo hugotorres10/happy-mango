@@ -60,15 +60,15 @@ export function Header() {
             onClick={toggleLang}
             className="ml-4 flex items-center gap-1 rounded px-3 py-1.5 text-xs font-semibold border border-white/10 hover:border-[rgba(201,162,39,0.3)] transition-colors"
           >
-            <span className={cn("transition-colors", lang === "en" ? "text-[#C9A227]" : "text-white/30")}>EN</span>
+            <span className={cn("transition-colors", lang === "en" ? "text-[#E8220A]" : "text-white/30")}>EN</span>
             <span className="text-white/20 text-[10px]">/</span>
-            <span className={cn("transition-colors", lang === "pt" ? "text-[#C9A227]" : "text-white/30")}>PT</span>
+            <span className={cn("transition-colors", lang === "pt" ? "text-[#E8220A]" : "text-white/30")}>PT</span>
           </button>
 
           <Button
             asChild
             size="sm"
-            className="ml-4 bg-[#C9A227] text-[#080E1A] font-semibold hover:bg-[#D4B44A] text-xs tracking-wider uppercase"
+            className="ml-4 bg-[#E8220A] text-[#080E1A] font-semibold hover:bg-[#F03A1A] text-xs tracking-wider uppercase"
           >
             <a href="#contact">{t(translations.nav.getInTouch, lang)}</a>
           </Button>
@@ -103,15 +103,15 @@ export function Header() {
             onClick={toggleLang}
             className="mt-4 flex w-full items-center justify-center gap-2 rounded border border-white/10 py-2 text-xs font-semibold transition-colors hover:border-[rgba(201,162,39,0.3)]"
           >
-            <span className={cn("transition-colors", lang === "en" ? "text-[#C9A227]" : "text-white/30")}>EN</span>
+            <span className={cn("transition-colors", lang === "en" ? "text-[#E8220A]" : "text-white/30")}>EN</span>
             <span className="text-white/20">/</span>
-            <span className={cn("transition-colors", lang === "pt" ? "text-[#C9A227]" : "text-white/30")}>PT</span>
+            <span className={cn("transition-colors", lang === "pt" ? "text-[#E8220A]" : "text-white/30")}>PT</span>
           </button>
 
           <Button
             asChild
             size="sm"
-            className="mt-4 w-full bg-[#C9A227] text-[#080E1A] font-semibold hover:bg-[#D4B44A] text-xs tracking-wider uppercase"
+            className="mt-4 w-full bg-[#E8220A] text-[#080E1A] font-semibold hover:bg-[#F03A1A] text-xs tracking-wider uppercase"
           >
             <a href="#contact" onClick={() => setMobileOpen(false)}>
               {t(translations.nav.getInTouch, lang)}

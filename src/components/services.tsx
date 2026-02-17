@@ -53,7 +53,7 @@ export function Services() {
       <div className="mx-auto max-w-7xl">
         <FadeInUp>
           <div className="max-w-xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#C9A227]">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#E8220A]">
               {t(translations.services.label, lang)}
             </p>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl">
@@ -77,7 +77,7 @@ export function Services() {
               >
                 <div className="mb-6 flex items-center justify-between">
                   <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[rgba(201,162,39,0.1)]">
-                    <service.icon className="size-5 text-[#C9A227]" />
+                    <service.icon className="size-5 text-[#E8220A]" />
                   </div>
                   <span className="text-xs font-mono text-white/20">{service.number}</span>
                 </div>

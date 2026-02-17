@@ -34,7 +34,7 @@ export function Sectors() {
       <div className="mx-auto max-w-7xl">
         <FadeInUp>
           <div className="text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#C9A227]">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#E8220A]">
               {t(translations.sectors.label, lang)}
             </p>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl">
@@ -51,7 +51,7 @@ export function Sectors() {
             <StaggerItem key={sector.label}>
               <div className="group flex flex-col items-center gap-3 rounded-xl border border-[rgba(201,162,39,0.08)] bg-[#111C2E] p-6 text-center transition-all hover:border-[rgba(201,162,39,0.2)] hover:bg-[#152238]">
                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-[rgba(201,162,39,0.08)] transition-colors group-hover:bg-[rgba(201,162,39,0.15)]">
-                  <sector.icon className="size-5 text-[#C9A227]" />
+                  <sector.icon className="size-5 text-[#E8220A]" />
                 </div>
                 <p className="text-xs font-medium tracking-wide text-white/50 group-hover:text-white/80 transition-colors">
                   {sector.label}

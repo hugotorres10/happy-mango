@@ -14,8 +14,8 @@ export function Hero() {
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-16 bg-[#080E1A]">
       {/* Gradient orbs — subtle, CSS only */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute -top-32 left-1/2 -translate-x-1/2 h-[600px] w-[900px] rounded-full bg-[#C9A227]/[0.04] blur-[120px]" />
-        <div className="absolute bottom-0 right-0 h-[400px] w-[600px] rounded-full bg-[#C9A227]/[0.03] blur-[100px]" />
+        <div className="absolute -top-32 left-1/2 -translate-x-1/2 h-[600px] w-[900px] rounded-full bg-[#E8220A]/[0.04] blur-[120px]" />
+        <div className="absolute bottom-0 right-0 h-[400px] w-[600px] rounded-full bg-[#E8220A]/[0.03] blur-[100px]" />
         {/* Subtle grid pattern */}
         <div
           className="absolute inset-0 opacity-[0.03]"
@@ -28,11 +28,11 @@ export function Hero() {
       </div>
 
       {/* Top border accent */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C9A227]/30 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#E8220A]/30 to-transparent" />
 
       <div className="relative mx-auto max-w-4xl text-center">
         <FadeInUp>
-          <p className="mb-6 text-xs font-semibold uppercase tracking-[0.3em] text-[#C9A227]">
+          <p className="mb-6 text-xs font-semibold uppercase tracking-[0.3em] text-[#E8220A]">
             {t(translations.hero.tagline, lang)}
           </p>
         </FadeInUp>
@@ -56,7 +56,7 @@ export function Hero() {
             <Button
               asChild
               size="lg"
-              className="bg-[#C9A227] px-8 text-[#080E1A] font-semibold hover:bg-[#D4B44A] text-sm tracking-wide"
+              className="bg-[#E8220A] px-8 text-[#080E1A] font-semibold hover:bg-[#F03A1A] text-sm tracking-wide"
             >
               <a href="#about">{t(translations.hero.discoverMore, lang)}</a>
             </Button>
@@ -75,7 +75,7 @@ export function Hero() {
       {/* Scroll indicator */}
       <a
         href="#about"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/20 transition-colors hover:text-[#C9A227] animate-bounce"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/20 transition-colors hover:text-[#E8220A] animate-bounce"
         aria-label="Scroll down"
       >
         <ArrowDown className="size-4" />
