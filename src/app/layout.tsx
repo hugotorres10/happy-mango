@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+const montserrat = Montserrat({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
-  title: "Happy Mango — Global Trade & Technology Partner",
+  title: "H Mango — Global Trade & Technology Partner",
   description:
-    "Happy Mango is a global trade and technology company specializing in textile trading, footwear trading, and IT services & consulting across three continents.",
+    "H Mango Lda is a global trade and technology company specializing in textile trading, footwear trading, and IT services & consulting across three continents.",
 };
 
 export default function RootLayout({
@@ -20,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className={`${montserrat.variable} font-sans antialiased`}>
         {children}
       </body>
     </html>

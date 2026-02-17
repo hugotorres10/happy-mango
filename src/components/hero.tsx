@@ -16,8 +16,8 @@ export function Hero() {
       {/* Background image — luxury fashion/textile */}
       <div className="absolute inset-0">
         <Image
-          src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1920&q=85"
-          alt="Luxury fashion and textiles"
+          src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&q=85"
+          alt="Cargo airport"
           fill
           priority
           className="object-cover object-center"
