@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone, Building2 } from "lucide-react";
 import { FadeInUp } from "@/components/motion-wrapper";
 import { useLang } from "@/lib/language-context";
 import { translations, t } from "@/lib/translations";
@@ -96,8 +96,13 @@ export function Contact() {
                 },
                 {
                   icon: MapPin,
-                  label: t(translations.contact.headquarters, lang),
+                  label: lang === "pt" ? "Sede" : "Headquarters",
                   value: "Av. do Atlântico nº 16, 14º piso\nEscritório 8, 1990-019 Parque das Nações\nPortugal",
+                },
+                {
+                  icon: Building2,
+                  label: lang === "pt" ? "Filial" : "Branch Office",
+                  value: "Rua das Cruzes nº 117\n4650-165 Felgueiras\nPortugal",
                 },
               ].map((item) => (
                 <div
