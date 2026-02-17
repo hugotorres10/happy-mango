@@ -97,7 +97,7 @@ export function Contact() {
                 {
                   icon: MapPin,
                   label: t(translations.contact.headquarters, lang),
-                  value: "Lisboa, Portugal",
+                  value: "Av. do Atlântico nº 16, 14º piso\nEscritório 8, 1990-019 Parque das Nações\nPortugal",
                 },
               ].map((item) => (
                 <div
@@ -109,7 +109,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="text-xs font-medium tracking-wider uppercase text-white/30">{item.label}</p>
-                    <p className="mt-1 text-sm text-white/70">{item.value}</p>
+                    <p className="mt-1 text-sm text-white/70 whitespace-pre-line">{item.value}</p>
                   </div>
                 </div>
               ))}

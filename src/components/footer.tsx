@@ -40,7 +40,7 @@ export function Footer() {
         </nav>
 
         <p className="text-xs text-white/20">
-          &copy; {new Date().getFullYear()} Happy Mango
+          &copy; {new Date().getFullYear()} H Mango Lda
         </p>
       </div>
     </footer>
