@@ -87,7 +87,7 @@ export function Contact() {
                 {
                   icon: Mail,
                   label: t(translations.contact.email, lang),
-                  value: "info@happymango.com",
+                  value: "HappyMangolda@gmail.com",
                 },
                 {
                   icon: Phone,
