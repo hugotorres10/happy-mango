@@ -92,7 +92,7 @@ export function Contact() {
                 {
                   icon: Phone,
                   label: t(translations.contact.phone, lang),
-                  value: "+351 000 000 000",
+                  value: "+351 912 339 361",
                 },
                 {
                   icon: MapPin,
