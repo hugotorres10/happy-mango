@@ -30,17 +30,20 @@ export function Header() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         scrolled
-          ? "bg-[#080E1A]/95 backdrop-blur-md border-b border-white/5"
+          ? "bg-white/95 backdrop-blur-md border-b border-[rgba(232,34,10,0.08)]"
           : "bg-transparent"
       )}
     >
       {/* White accent bar at very top */}
       <div className="h-1 w-full bg-white" />
+
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:px-8">
-        {/* Logo — no white box */}
+        {/* Logo */}
         <a href="#" className="flex items-center">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo.jpg" alt="H Mango" className="h-10 w-auto" />
+          <div className="bg-white rounded-md px-3 py-1.5 shadow-sm">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/logo.jpg" alt="H Mango" className="h-14 w-auto" />
+          </div>
         </a>
 
         {/* Desktop Nav */}
@@ -49,7 +52,7 @@ export function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="px-4 py-2 text-xs font-medium tracking-wider uppercase text-white/40 transition-colors hover:text-white"
+              className="px-4 py-2 text-xs font-medium tracking-wider uppercase text-[#0A1628]/50 transition-colors hover:text-[#0A1628]"
             >
               {t(translations.nav[link.key], lang)}
             </a>
@@ -58,17 +61,17 @@ export function Header() {
           {/* Language Toggle */}
           <button
             onClick={toggleLang}
-            className="ml-4 flex items-center gap-1 rounded px-3 py-1.5 text-xs font-semibold border border-white/10 hover:border-[rgba(232,34,10,0.5)] transition-colors"
+            className="ml-4 flex items-center gap-1 rounded px-3 py-1.5 text-xs font-semibold border border-[rgba(10,22,40,0.08)] hover:border-[rgba(232,34,10,0.3)] transition-colors"
           >
-            <span className={cn("transition-colors", lang === "en" ? "text-[#E8220A]" : "text-white/30")}>EN</span>
-            <span className="text-white/20 text-[10px]">/</span>
-            <span className={cn("transition-colors", lang === "pt" ? "text-[#E8220A]" : "text-white/30")}>PT</span>
+            <span className={cn("transition-colors", lang === "en" ? "text-[#E8220A]" : "text-[#0A1628]/40")}>EN</span>
+            <span className="text-[#0A1628]/30 text-[10px]">/</span>
+            <span className={cn("transition-colors", lang === "pt" ? "text-[#E8220A]" : "text-[#0A1628]/40")}>PT</span>
           </button>
 
           <Button
             asChild
             size="sm"
-            className="ml-4 bg-[#E8220A] text-white font-semibold hover:bg-[#C01A06] text-xs tracking-wider uppercase border-0"
+            className="ml-4 bg-[#0A1628] text-white font-semibold hover:bg-[#1A2840] text-xs tracking-wider uppercase"
           >
             <a href="#contact">{t(translations.nav.getInTouch, lang)}</a>
           </Button>
@@ -77,7 +80,7 @@ export function Header() {
         {/* Mobile Menu Toggle */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="text-white/60 md:hidden"
+          className="text-[#0A1628]/60 md:hidden"
           aria-label="Toggle menu"
         >
           {mobileOpen ? <X className="size-5" /> : <Menu className="size-5" />}
@@ -86,13 +89,13 @@ export function Header() {
 
       {/* Mobile Nav */}
       {mobileOpen && (
-        <nav className="border-t border-white/5 bg-[#080E1A]/98 backdrop-blur-md px-6 pb-6 md:hidden">
+        <nav className="border-t border-[rgba(10,22,40,0.05)] bg-white/98 backdrop-blur-md px-6 pb-6 md:hidden">
           {NAV_LINKS.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              className="block py-3 text-xs font-medium tracking-wider uppercase text-white/40 transition-colors hover:text-white border-b border-white/5 last:border-0"
+              className="block py-3 text-xs font-medium tracking-wider uppercase text-[#0A1628]/50 transition-colors hover:text-[#0A1628] border-b border-[rgba(10,22,40,0.05)] last:border-0"
             >
               {t(translations.nav[link.key], lang)}
             </a>
@@ -101,17 +104,17 @@ export function Header() {
           {/* Mobile Language Toggle */}
           <button
             onClick={toggleLang}
-            className="mt-4 flex w-full items-center justify-center gap-2 rounded border border-white/10 py-2 text-xs font-semibold transition-colors hover:border-[rgba(232,34,10,0.5)]"
+            className="mt-4 flex w-full items-center justify-center gap-2 rounded border border-[rgba(10,22,40,0.08)] py-2 text-xs font-semibold transition-colors hover:border-[rgba(232,34,10,0.3)]"
           >
-            <span className={cn("transition-colors", lang === "en" ? "text-[#E8220A]" : "text-white/30")}>EN</span>
-            <span className="text-white/20">/</span>
-            <span className={cn("transition-colors", lang === "pt" ? "text-[#E8220A]" : "text-white/30")}>PT</span>
+            <span className={cn("transition-colors", lang === "en" ? "text-[#E8220A]" : "text-[#0A1628]/40")}>EN</span>
+            <span className="text-[#0A1628]/30">/</span>
+            <span className={cn("transition-colors", lang === "pt" ? "text-[#E8220A]" : "text-[#0A1628]/40")}>PT</span>
           </button>
 
           <Button
             asChild
             size="sm"
-            className="mt-4 w-full bg-[#E8220A] text-white font-semibold hover:bg-[#C01A06] text-xs tracking-wider uppercase border-0"
+            className="mt-4 w-full bg-[#0A1628] text-white font-semibold hover:bg-[#1A2840] text-xs tracking-wider uppercase"
           >
             <a href="#contact" onClick={() => setMobileOpen(false)}>
               {t(translations.nav.getInTouch, lang)}
