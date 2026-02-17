@@ -17,10 +17,8 @@ export function Footer() {
     <footer className="bg-white border-t border-[rgba(232,34,10,0.08)] px-6 py-10">
       <div className="mx-auto max-w-7xl flex flex-col items-center gap-6 sm:flex-row sm:justify-between">
         <a href="#">
-          <div className="bg-white rounded-md px-2.5 py-1 shadow-sm">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo.jpg" alt="H Mango" className="h-8 w-auto" />
-          </div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo.png" alt="H Mango" className="h-8 w-auto" />
         </a>
         <nav className="flex gap-6">
           {FOOTER_LINKS.map((link) => (

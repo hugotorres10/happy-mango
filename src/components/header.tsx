@@ -38,12 +38,10 @@ export function Header() {
       <div className="h-1 w-full bg-white" />
 
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:px-8">
-        {/* Logo */}
+        {/* Logo — transparent PNG, no background box */}
         <a href="#" className="flex items-center">
-          <div className="bg-white rounded-md px-3 py-1.5 shadow-sm">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo.jpg" alt="H Mango" className="h-14 w-auto" />
-          </div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo.png" alt="H Mango" className="h-14 w-auto" />
         </a>
 
         {/* Desktop Nav */}
