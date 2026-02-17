@@ -36,13 +36,11 @@ export function Header() {
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:px-8">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-3">
-          <span className="flex h-8 w-8 items-center justify-center rounded text-[#C9A227] font-bold text-sm border border-[rgba(201,162,39,0.3)]">
-            HM
-          </span>
-          <span className="text-sm font-semibold tracking-widest text-white uppercase">
-            Happy Mango
-          </span>
+        <a href="#" className="flex items-center">
+          <div className="bg-white rounded-md px-3 py-1.5">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/logo.jpg" alt="H Mango" className="h-7 w-auto" />
+          </div>
         </a>
 
         {/* Desktop Nav */}

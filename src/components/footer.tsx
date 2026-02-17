@@ -17,14 +17,12 @@ export function Footer() {
     <footer className="bg-[#080E1A] border-t border-[rgba(201,162,39,0.08)] px-6 py-10">
       <div className="mx-auto max-w-7xl flex flex-col items-center gap-6 sm:flex-row sm:justify-between">
         {/* Logo */}
-        <div className="flex items-center gap-3">
-          <span className="flex h-7 w-7 items-center justify-center rounded text-[#C9A227] font-bold text-xs border border-[rgba(201,162,39,0.3)]">
-            HM
-          </span>
-          <span className="text-sm font-semibold tracking-widest text-white uppercase">
-            Happy Mango
-          </span>
-        </div>
+        <a href="#">
+          <div className="bg-white rounded-md px-2.5 py-1">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/logo.jpg" alt="H Mango" className="h-6 w-auto" />
+          </div>
+        </a>
 
         {/* Links */}
         <nav className="flex gap-6">
