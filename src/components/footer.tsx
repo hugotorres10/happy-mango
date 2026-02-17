@@ -20,7 +20,7 @@ export function Footer() {
         <a href="#">
           <div className="bg-white rounded-md px-2.5 py-1">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo.jpg" alt="H Mango" className="h-6 w-auto" />
+            <img src="/logo.jpg" alt="H Mango" className="h-8 w-auto" />
           </div>
         </a>
 

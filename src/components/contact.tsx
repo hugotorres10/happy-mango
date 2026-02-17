@@ -73,7 +73,7 @@ export function Contact() {
               </div>
               <Button
                 type="submit"
-                className="bg-[#E8220A] text-[#080E1A] font-semibold hover:bg-[#F03A1A] text-xs tracking-wider uppercase px-8"
+                className="bg-[#0A1628] text-white font-semibold hover:bg-[#1A2840] text-xs tracking-wider uppercase px-8"
               >
                 {t(translations.contact.sendMessage, lang)}
               </Button>

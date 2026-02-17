@@ -39,7 +39,7 @@ export function Header() {
         <a href="#" className="flex items-center">
           <div className="bg-white rounded-md px-3 py-1.5">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo.jpg" alt="H Mango" className="h-7 w-auto" />
+            <img src="/logo.jpg" alt="H Mango" className="h-10 w-auto" />
           </div>
         </a>
 
@@ -68,7 +68,7 @@ export function Header() {
           <Button
             asChild
             size="sm"
-            className="ml-4 bg-[#E8220A] text-[#080E1A] font-semibold hover:bg-[#F03A1A] text-xs tracking-wider uppercase"
+            className="ml-4 bg-[#0A1628] text-white font-semibold hover:bg-[#1A2840] text-xs tracking-wider uppercase"
           >
             <a href="#contact">{t(translations.nav.getInTouch, lang)}</a>
           </Button>
@@ -111,7 +111,7 @@ export function Header() {
           <Button
             asChild
             size="sm"
-            className="mt-4 w-full bg-[#E8220A] text-[#080E1A] font-semibold hover:bg-[#F03A1A] text-xs tracking-wider uppercase"
+            className="mt-4 w-full bg-[#0A1628] text-white font-semibold hover:bg-[#1A2840] text-xs tracking-wider uppercase"
           >
             <a href="#contact" onClick={() => setMobileOpen(false)}>
               {t(translations.nav.getInTouch, lang)}

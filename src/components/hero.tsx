@@ -56,7 +56,7 @@ export function Hero() {
             <Button
               asChild
               size="lg"
-              className="bg-[#E8220A] px-8 text-[#080E1A] font-semibold hover:bg-[#F03A1A] text-sm tracking-wide"
+              className="bg-[#0A1628] px-8 text-white font-semibold hover:bg-[#1A2840] text-sm tracking-wide"
             >
               <a href="#about">{t(translations.hero.discoverMore, lang)}</a>
             </Button>
