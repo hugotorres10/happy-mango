@@ -9,7 +9,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hmango.com"),
+  metadataBase: new URL("https://hmango.eu"),
   title: {
     default: "H Mango | Comércio Global, Tecnologia e Formação Profissional",
     template: "%s | H Mango",
@@ -20,9 +20,9 @@ export const metadata: Metadata = {
     "H Mango", "comércio têxtil Portugal", "footwear trading", "IT consulting Lisboa",
     "formação profissional", "renting leasing", "trade company Portugal",
     "import export Portugal", "Parque das Nações empresa", "H Mango Lda",
-    "hmango.com", "global trade partner",
+    "hmango.eu", "global trade partner",
   ],
-  authors: [{ name: "H Mango Lda", url: "https://hmango.com" }],
+  authors: [{ name: "H Mango Lda", url: "https://hmango.eu" }],
   creator: "H Mango Lda",
   publisher: "H Mango Lda",
   robots: {
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_PT",
     alternateLocale: "en_US",
-    url: "https://hmango.com",
+    url: "https://hmango.eu",
     siteName: "H Mango",
     title: "H Mango | Comércio Global, Tecnologia e Formação Profissional",
     description:
@@ -61,10 +61,10 @@ export const metadata: Metadata = {
     images: ["/og-image.jpg"],
   },
   alternates: {
-    canonical: "https://hmango.com",
+    canonical: "https://hmango.eu",
     languages: {
-      "pt-PT": "https://hmango.com",
-      "en-US": "https://hmango.com",
+      "pt-PT": "https://hmango.eu",
+      "en-US": "https://hmango.eu",
     },
   },
 };

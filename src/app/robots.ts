@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://hmango.com/sitemap.xml",
-    host: "https://hmango.com",
+    sitemap: "https://hmango.eu/sitemap.xml",
+    host: "https://hmango.eu",
   };
 }

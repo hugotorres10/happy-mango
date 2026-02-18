@@ -12,8 +12,8 @@ const jsonLd = {
   "@type": "Organization",
   name: "H Mango Lda",
   alternateName: "H Mango",
-  url: "https://hmango.com",
-  logo: "https://hmango.com/logo.png",
+  url: "https://hmango.eu",
+  logo: "https://hmango.eu/logo.png",
   description:
     "Empresa portuguesa de comércio global especializada em têxteis, calçado, IT e formação profissional. Presença em 3 continentes.",
   address: [
